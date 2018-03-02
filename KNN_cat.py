@@ -1,8 +1,8 @@
 """
 Finding minimum L1 norm to classify a cat using KNN:
 
-Train set was 5 images: a cat, person, fire hydrant, book, and computer. Test
-image was another picture of a cat
+Train set was 5 images: a cat, person, fire hydrant, book, and computer. 
+Test image was another picture of a cat
 
 Errors in ascending order:
 
@@ -56,7 +56,6 @@ def compress(path):
 
     return X_i
 
-
 def create_X_y():
     Xtr = np.array([])
     ytr = np.array([])
@@ -77,14 +76,12 @@ def create_X_y():
 
 X_train, y_train = create_X_y()
 
-
 class NearestNeighbor(object):
     path = train_dir = "C:/Users/PeterKokalov/lpthw/StanfordCNN/Lecture2/KNN/images/train"
 
     def __init__(self):
         pass
 
-    
     def predict(self, X, y):
 
         distances = np.zeros(X.shape[1])
