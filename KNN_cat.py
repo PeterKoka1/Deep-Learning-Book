@@ -84,6 +84,7 @@ class NearestNeighbor(object):
     def __init__(self):
         pass
 
+    
     def predict(self, X, y):
 
         distances = np.zeros(X.shape[1])
@@ -95,7 +96,6 @@ class NearestNeighbor(object):
             distances[ix] = err
 
         return distances
-
 
 nn = NearestNeighbor()
 L1_norms = nn.predict(X_train, y_train)
