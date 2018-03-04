@@ -1,5 +1,5 @@
 """
-Finding minimum L1 norm to classify a cat using KNN:
+Finding minimum L1 norm to classify a cat (naive KNN with K=1):
 
 Train set was 5 images: a cat, person, fire hydrant, book, and computer. 
 Test image was another picture of a cat
