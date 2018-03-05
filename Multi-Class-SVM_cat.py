@@ -50,7 +50,6 @@ W[:, 0:X_train.shape[0]] = np.ones((X_train.shape[1], X_train.shape[0])) / 10
 
 y = {j.split('_1.jpg')[0]: i for i, j in enumerate(images) if j != 'test.jpg'}
 
-
 def reg(W):
     squared = W ** 2
     L2 = np.sum(squared)
@@ -60,8 +59,10 @@ def reg(W):
 
 def L_unvectorized(X, y, W):
     L = 0.0
+    
     c = 1 / X.shape[1]
     delta = 1.0
+    lambda = 1.0
     y_i = y['cat']
 
     for x_i in X.T:
@@ -76,7 +77,7 @@ def L_unvectorized(X, y, W):
                     m += m_i
         L += m
 
-    L = L * c + reg(W)
+    L = L * c + (lambda * reg(W))
 
     return L
 
