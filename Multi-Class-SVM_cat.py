@@ -1,9 +1,7 @@
 """
-Computing L2 loss from first iteration of multi-class SVM
-using a linear classifier.
-
-Weights were all set to 0.1.
-The train set was 5 images: a cat, person, fire hydrant, book, and computer.
+Unvectorized approach to multi-class Support Vector Machine
+L2 loss from first iteration of gradient. Weights all set to 0.1. 
+Image recognition with 5 classes.
 """
 
 import numpy as np
