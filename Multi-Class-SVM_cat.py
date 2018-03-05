@@ -62,7 +62,7 @@ def L_unvectorized(X, y, W):
     
     c = 1 / X.shape[1]
     delta = 1.0
-    lambda = 1.0
+    lam = 1.0
     y_i = y['cat']
 
     for x_i in X.T:
@@ -77,7 +77,7 @@ def L_unvectorized(X, y, W):
                     m += m_i
         L += m
 
-    L = L * c + (lambda * reg(W))
+    L = L * c + (lam * reg(W))
 
     return L
 
