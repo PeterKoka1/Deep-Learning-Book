@@ -6,7 +6,7 @@ Computing the DKL convergence from scratch with applications to skewed and multi
 Gradients also displayed
 
 ### KNN-cat.py
-Finding minimum L1 norm to classify the image of a cat (naive KNN with K=1) from scratch
+Finding minimum L1 norm to classify the image of a cat (naive KNN with K=1) from scratch.
 Train set was 5 images: a cat, person, fire hydrant, book, and computer. Test image was another picture of a cat. All images scraped from the web
 
 ### Learning_XOR.ipynb
