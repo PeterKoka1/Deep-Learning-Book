@@ -6,7 +6,7 @@ Computing the DKL convergence from scratch with applications to skewed and multi
 Gradients also displayed
 
 ### Activation-Saturation.py
-Showing how improper weight initialization causes activations to saturate during forward and backward passes along the gradient. Using the modified Xavier weight matrix initialization to solve saturation. Huge props to all material and notes and an awesome course @CS231N from Stanford university (http://cs231n.stanford.edu/index.html).
+Showing how improper weight initialization causes activations to saturate during forward and backward passes along the gradient. Using the modified Xavier weight matrix initialization to solve saturation. Huge props to all material, notes, and an awesome course @Stanford CS231N (http://cs231n.stanford.edu/index.html).
 
 ### KNN-cat.py
 Finding minimum L1 norm to classify the image of a cat (naive KNN with K=1) from scratch.
